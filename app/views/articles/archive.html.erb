@@ -1,0 +1,16 @@
+<div class="archive">
+	<%= form_tag({controller: "articles", action: "archive"}, method: "get") do %>
+		<div class="select">
+			<%= select_tag(:month, options_for_select([['Month', 0], ['January', 1], ['February', 2], ['March', 	3], ['April', 4], ['May', 5], ['June', 6], ['July', 7], ['August', 8], ['September', 9], ['	October', 10], ['November', 11], ['December', 12]])) %>
+			<%= select_tag(:year, options_for_select([['Year', 0], [2016], [2017], [2018], [2019], [2020]])) %>
+			<%= submit_tag "Search", class: "submit" %>
+		</div>
+		<hr>
+	<% end %>
+	
+	<% @articles.each do |article| %>
+		<p>
+			<%= link_to article.title, article_path(article), class: "article_title", id: "article_#article	.id}" %> <%= " | Views: #{article.view_count}" %>
+		</p>
+	<% end %>
+</div>

@@ -1,0 +1,19 @@
+<div class="login">
+	<h1>Login</h1>
+	<hr>
+	<%= form_tag author_sessions_path, method: :post do %>
+		<div class="field">
+			<p><%= label_tag :email %></p>
+			<%= text_field_tag :email %>
+			<br>
+		</div>
+		<div class="field">
+			<p><%= label_tag :password %></p>
+			<%= password_field_tag :password %>
+			<br>
+		</div>
+		<div>
+			<%= submit_tag "Login", :class => 'submit' %>
+		</div>
+	<% end %>
+</div>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blogger</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+	<link rel="alternate" type="application/rss+xml" title="Philosophy blog RSS Feed" href="https://example/feed?format=rss"> <!-- Need to change URL -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div id="wrapper">
+
+		<div class="top_bar">
+
+			<% if logged_in? %>
+				<p><%= "Logged in as #{current_user.email} - " %></p>
+				<%= link_to "(logout)", logout_path %>
+			<% else %>
+				<%= link_to "(login)", login_path %>
+			<% end %>
+				<span class="top_bar_right"><a href="https://github.com/Westw00d">Github</a>
+				<a href="https://example/feed?format=rss">RSS</a></span> <!-- Need to change URL -->
+
+		</div>
+
+		<header>
+			<div class="quote_div">
+				<p class="quote">"Egoism is the very essence of a noble soul."</p>
+			</div>
+			<div class="writer_div">
+				<p class="writer">-Friedrich Nietzsche</p>
+			</div>
+		</header>
+	
+		<nav>
+			<%= link_to "Articles", articles_path %>
+			<%= link_to "Popular", popular_path %>
+			<%= link_to "Archive", archive_path %>
+			<% if logged_in? %>
+			<%= link_to "Tags", tags_path %>
+			<%= link_to "Create", new_article_path %>
+			<% end %>
+		</nav>
+		
+		<br>
+
+		<div class="flash_notice">
+			<p class="flash"><%= flash.notice %></p>
+		</div>
+		
+		<section class="content">
+			<%= yield %>
+		</section>
+
+	</div>
+	
+</body>
+</html>

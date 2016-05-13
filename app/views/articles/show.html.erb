@@ -1,0 +1,27 @@
+<div class="article_page">
+	<p class="article_title"><%= @article.title %></p>
+	<hr>
+	<br>
+	<p class="article_tags">
+	 	Tags:
+		<% @article.tags.each do |tag| %>
+	    	<%= link_to tag.name, tag_path(tag) %>
+	  	<% end %>
+	</p>
+	<% if @article.image.exists? %>
+		<%= image_tag @article.image.url, :class => 'image' %>
+	<% end %>
+	<br>
+	<p class="article_body">
+		<%= @article.body %>
+	</p>
+	<br>
+	<p class="comments">Comments (<%= @article.comments.size %>)</p>
+	<br>
+	<%= render partial: 'articles/comment', collection: @article.comments %>
+	<%= render partial: 'comments/form' %>
+	<% if logged_in? %>
+		<%= link_to "delete", article_path(@article), method: :delete, data: {confirm: "Are 		you sure you want to delete this article?"} %>
+		<%= link_to "edit", edit_article_path(@article) %>
+	<% end %>
+</div>

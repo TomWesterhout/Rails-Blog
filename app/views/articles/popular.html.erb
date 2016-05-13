@@ -1,0 +1,10 @@
+<div class="popular">
+	<p><span class="popular_title">Popular Articles</span></p>
+	<hr>
+		<% @articles.each do |article| %>
+			<p>
+				<%= link_to article.title, article_path(article), class: "article.title", id: "article_#{article	.id}" %>
+				<%= "Views: #{article.view_count}" %>
+			</p>
+		<% end %>
+</div>
