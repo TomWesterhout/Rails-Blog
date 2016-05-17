@@ -581,8 +581,8 @@
 	/* Contains styling for the header element including quotes and writer names */
 	header {
 		width: 100%;
-		padding-top: 10%;
-		padding-bottom: 10%;
+		padding-top: 15%;
+		padding-bottom: 15%;
 		background-color: #4C5464;
 		color: #E6E6E6;
 	}
@@ -590,14 +590,14 @@
 	.quote_div {
 		display: inline;
 		text-align: center;
-		font-size: 8vw;
+		font-size: 10vw;
 	}
 	
 	.writer_div {
 		display: inline;
 		float: right;
 		font-size: 4vw;
-		padding-top: 5%;
+		padding-top: 10%;
 		padding-right: 1%;
 	}
 	
@@ -611,7 +611,7 @@
 		display: block;
 		text-align: center;
 		color: #B0882E;
-		font-size: 5vw;
+		font-size: 7vw;
 		padding-right: 1.5%;
 	}
 	
@@ -626,7 +626,7 @@
 	}
 	
 	.flash {
-		font-size: 4vw;
+		font-size: 5vw;
 		color: #B0882E;
 	}
 	
@@ -655,7 +655,7 @@
 	}
 	
 	.title a {
-		font-size: 5vw;
+		font-size: 7vw;
 		color: #B0882E;
 		text-decoration: none;
 	}
@@ -669,7 +669,7 @@
 	.body a {
 		color: #4C5464;
 		text-decoration: none;
-		font-size: 4vw;
+		font-size: 5vw;
 	}
 	
 	.view {
@@ -682,7 +682,7 @@
 	 .view p {
 	 	display: inline;
 		color: #E6E6E6;
-		font-size: 4vw;
+		font-size: 5vw;
 		margin-right: 1%;
 	}
 	
@@ -710,11 +710,11 @@
 		margin: 0 auto;
 		background-color: #565F71;
 		width: 80%;
-		height: 0.8px;
+		height: 1px;
 	}
 	
 	.popular_title {
-		font-size: 5vw;
+		font-size: 7vw;
 		color: #B0882E;
 	}
 	
@@ -725,7 +725,7 @@
 	
 	.popular p {
 		text-align: center;
-		font-size: 4vw;
+		font-size: 5vw;
 	}
 	
 	/* interaction styling of popular page */
@@ -745,18 +745,19 @@
 	}
 	
 	.tags_title {
-		font-size: 5vw;
+		font-size: 7vw;
 		color: #B0882E;
 	}
 	
 	.tags a {
 		text-decoration: none;
 		color: #4C5464;
+		font-size: 5vw;
 	}
 	
 	.tags p {
 		text-align: center;
-		font-size: 4vw;
+		font-size: 5vw;
 	}
 	
 	.tag_page {
@@ -771,7 +772,7 @@
 	}
 	
 	h1 {
-		font-size: 5vw;
+		font-size: 7vw;
 		color: #B0882E;
 	}
 	
@@ -780,13 +781,13 @@
 	}
 
 	.tag_page p {
-		font-size: 4vw;
+		font-size: 5vw;
 	}
 	
 	.tag_page a {
 		text-decoration: none;
 		color: #4C5464;
-		font-size: 4vw;
+		font-size: 5vw;
 	}
 	
 	/* Interaction styling of tags page */
@@ -814,12 +815,12 @@
 	.archive a {
 		text-decoration: none;
 		color: #4C5464;
-		font-size: 4vw;
+		font-size: 5vw;
 	}
 	
 	.archive p {
 		text-align: center;
-		font-size: 4vw;
+		font-size: 5vw;
 		color: #4C5464;
 	}
 	
@@ -830,7 +831,7 @@
 	
 	select {
 		background-color: #F6F6F6;
-		font-size: 4vw;
+		font-size: 5vw;
 		color: #B0882E;
 		border: 1px solid #4C5464;
 		padding: 0.5% 3% 0.5% 3%;
@@ -839,11 +840,11 @@
 	
 	.submit {
 		background-color: #F6F6F6;
-		font-size: 4vw;
+		font-size: 5vw;
 		color: #B0882E;
 		border: 1px solid #4C5464;
 		border-radius: 5px;
-		padding: 0.7% 4%;
+		padding: 0.3% 15% 0.3% 15%;
 		margin: 2%;
 	}
 	
@@ -873,7 +874,7 @@
 	
 	.create_title {
 		text-align: center;
-		font-size: 5vw;
+		font-size: 7vw;
 		color: #B0882E;
 	}
 	
@@ -882,7 +883,7 @@
 		width: 80%;
 		border: 1px solid #4C5464;
 		border-radius: 5px;
-		font-size: 4vw;
+		font-size: 5vw;
 		padding: 1% 0 1% 0;
 	}
 	
@@ -891,13 +892,13 @@
 		width: 80%;
 		border: 1px solid #4C5464;
 		border-radius: 5px;
-		font-size: 4vw;
+		font-size: 5vw;
 		padding: 2% 0 2% 0;
 	}
 	
 	.image_file {
 		background-color: #F6F6F6;
-		font-size: 4vw;
+		font-size: 5vw;
 		color: #B0882E;
 		border: 1px solid #4C5464;
 		border-radius: 5px;
@@ -927,7 +928,7 @@
 	
 	.edit_title {
 		text-align: center;
-		font-size: 5vw;
+		font-size: 7vw;
 		color: #B0882E;
 	}
 	
@@ -936,7 +937,7 @@
 		width: 80%;
 		border: 1px solid #4C5464;
 		border-radius: 5px;
-		font-size: 4vw;
+		font-size: 5vw;
 		padding: 1% 0 1% 0;
 	}
 	
@@ -945,13 +946,13 @@
 		width: 80%;
 		border: 1px solid #4C5464;
 		border-radius: 5px;
-		font-size: 4vw;
+		font-size: 5vw;
 		padding: 2% 0 2% 0;
 	}
 	
 	.image_file {
 		background-color: #F6F6F6;
-		font-size: 4vw;
+		font-size: 5vw;
 		color: #B0882E;
 		border: 1px solid #4C5464;
 		border-radius: 5px;
@@ -973,11 +974,12 @@
 	.article_page a {
 		text-decoration: none;
 		color: #4C5464;
+		font-size: 5vw;
 	}
 	
 	.article_title {
 		text-align: center;
-		font-size: 5vw;
+		font-size: 7vw;
 		color: #B0882E;
 	}
 	
@@ -987,7 +989,7 @@
 	
 	.comment_title {
 		text-align: center;
-		font-size: 5vw;
+		font-size: 7vw;
 		color: #B0882E;
 	}
 	
@@ -996,7 +998,7 @@
 		width: 80%;
 		border: 1px solid #4C5464;
 		border-radius: 5px;
-		font-size: 4vw;
+		font-size: 5vw;
 		padding: 1% 0 1% 0;
 	}
 	
@@ -1005,7 +1007,7 @@
 		width: 80%;
 		border: 1px solid #4C5464;
 		border-radius: 5px;
-		font-size: 4vw;
+		font-size: 5vw;
 		padding: 2% 0 2% 0;
 	}
 	
@@ -1044,9 +1046,9 @@
 		color: #B0882E;
 		border: 1px solid #4C5464;
 		border-radius: 5px;
-		padding: 0.2% 2% 0.2% 2%;
+		padding: 0.2% 5% 0.2% 5%;
 		margin: 2%;
-		font-size: 4vw;
+		font-size: 5vw;
 	}
 	
 	.login input[type=text] {
@@ -1054,7 +1056,7 @@
 		width: 40%;
 		border: 1px solid #4C5464;
 		border-radius: 5px;
-		font-size: 4vw;
+		font-size: 5vw;
 	}
 	
 	.login input[type=password] {
@@ -1062,11 +1064,7 @@
 		width: 40%;
 		border: 1px solid #4C5464;
 		border-radius: 5px;
-		font-size: 4vw;
+		font-size: 5vw;
 	}
 
-}
-	
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-    /* portrait phones */
 }
